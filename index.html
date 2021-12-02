@@ -7,8 +7,38 @@
     <title>Document</title>
     <link rel="stylesheet" href="assets/style.css" />
     <script src="assets/main.js" async></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/5.0.0/math.js"
+      integrity="sha512-+KihqiIrhYt4/tFb42KiOJ+wr0PM6dVMw9twO1Ju+sZ0OdgurvE/9dy2jAS0Fr0MCVryF2EXxPH9HRXg6CaFgg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+      async
+    ></script>
   </head>
   <body>
-    <form><input /> <button>click</button></form>
+    <!-- счетчик -->
+    <div class="calculator-form">
+      <h1>Length Calculator</h1>
+      <form><input /> <button id="coint">click</button></form>
+    </div>
+
+    <!-- калькулятор -->
+    <div class="calculator-form">
+      <h2>Calculator</h2>
+      <input id="num1" class="num" />
+
+      <div id="operatorBtns">
+        <button id="plus">+</button>
+        <button id="minus">-</button>
+        <button id="times">x</button>
+        <button id="divide">:</button>
+      </div>
+
+      <input id="num2" class="num" />
+      <br />
+
+      <button class="calcBtn">Посчитать</button>
+      <p id="result"></p>
+    </div>
   </body>
 </html>
